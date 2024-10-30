@@ -1,0 +1,140 @@
+body {
+    margin: 10;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Altura total de la ventana */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+}
+
+.menu {
+    background: linear-gradient(90deg, #f7f6f6, #deee04); /* Degradado de izquierda a derecha */
+    padding: 0px 100px; /* Espaciado del menú */
+    display:flex; /* Para alinear logo y menú */
+    align-items: center; /* Centra verticalmente */
+    
+    
+}
+
+.logo img {
+    height: 100px; /* Ajusta el tamaño de la imagen */
+    max-width: 100%; /* Responsivo */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 20px; /* Espaciado entre elementos */
+    
+}
+
+.menu a {
+    color: rgb(7, 7, 7); /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de fuente */
+    padding: 10px 15px; /* Espaciado interno */
+    transition: background 0.3s; /* Efecto de transición */
+    
+}
+
+.menu a:hover {
+    color: red; /* Cambia a rojo al pasar el cursor */
+   
+}
+
+.login-container {
+    display: flex; /* Flexbox para centrar el formulario */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: calc(100vh - 60px); /* Resta la altura del menú */
+    padding: 20px; /* Espaciado */
+}
+
+.login-form {
+    position: relative; /* Posiciona el formulario relativamente */
+    background: white; /* Fondo del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centra el contenido del formulario */
+    width: 100%; /* Ancho completo */
+    max-width: 400px; /* Ancho máximo */
+}
+
+.login-form h2 {
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+.logo-form {
+    position: relative; /* Para que los hijos se posicionen en relación a esto */
+    width: 100%; /* Ancho completo del contenedor de logo */
+}
+
+.logo-form img {
+    width: 100%; /* Ajusta el tamaño del logo al 100% del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+.logo-form input {
+    position: absolute; /* Posiciona los inputs sobre el logo */
+    left: 10%; /* Alineación desde la izquierda */
+    right: 10%; /* Alineación desde la derecha */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde de los campos */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.logo-form input:nth-of-type(1) {
+    top: 40%; /* Ajusta la posición del primer input */
+    transform: translateY(-50%); /* Centra verticalmente */
+}
+
+.logo-form input:nth-of-type(2) {
+    top: 60%; /* Ajusta la posición del segundo input */
+    transform: translateY(-50%); /* Centra verticalmente */
+}
+
+.login-form button {
+    padding: 10px; /* Espaciado interno del botón */
+    background-color: #1d7bb2; /* Fondo del botón */
+    color: rgb(17, 17, 17); /* Color del texto del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Esquinas redondeadas */
+    width: 100%; /* Botón ocupa el 100% del ancho */
+    margin-top: 5px; /* Espacio superior reducido */
+    position: relative; /* Posición relativa para centrar */
+    top: 75%; /* Ajusta la posición del botón */
+}
+
+.login-form button:hover {
+    background-color: #2f3480; /* Fondo del botón al pasar el ratón */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column; /* Menú en columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Espaciado entre elementos en columna */
+    }
+
+    .login-container {
+        height: auto; /* Permite que el contenedor ajuste su altura */
+    }
+
+    .login-form {
+        padding: 15px; /* Reduce el espaciado en pantallas pequeñas */
+    }
+    
+}
+
+

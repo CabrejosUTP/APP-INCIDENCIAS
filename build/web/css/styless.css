@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #f7f6f6, #deee04); /* Degradado */
+    height: 60px; /* Ajusta la altura del menú */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+}
+
+.logo {
+    height: 100%; /* Ajusta la altura del logo al 100% del menú */
+    max-height: 50px; /* Limita la altura máxima del logo */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 0px; /* Espacio entre el logo y el menú */
+    flex-grow: 1; /* Permite que el menú ocupe el espacio restante */
+    justify-content: flex-start; /* Alinea los enlaces a la izquierda */
+}
+
+.menu a {
+    color: rgb(12, 12, 12); /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+    font-size: 18px; /* Tamaño de la letra */
+    margin: 0 15px; /* Espacio entre los enlaces */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.menu a:hover {
+    color: red; /* Cambia a rojo al pasar el cursor */
+}
+
+/* Estilos del fondo */
+.fondo-bajo-menu {
+    background-color: #f0f0f0; /* Color del fondo */
+    height: 20px; /* Ajusta la altura según tus necesidades */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea a la izquierda */
+    }
+
+    .menu {
+        margin-left: 0; /* Quita el margen izquierdo */
+        margin-top: 10px; /* Espacio entre el logo y el menú */
+        width: 200%; /* Ocupar el ancho completo */
+        justify-content: space-between; /* Espacio entre los enlaces */
+    }
+
+    .menu a {
+        margin: 0 10px; /* Ajusta el margen en pantallas pequeñas */
+    }
+}
